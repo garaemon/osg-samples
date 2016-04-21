@@ -13,7 +13,7 @@ int main(int argc, char **argv) {
   hints->setDetailRatio(0.5f);
   geode->addDrawable(new osg::ShapeDrawable(
       new osg::Box(osg::Vec3(2.0f, 0.0f, 0.0f), 2 * 0.5), hints));
-  viewer.setSceneData(geode);
+  viewer.setSceneData(geode);                                                   
 
   return viewer.run();
 }

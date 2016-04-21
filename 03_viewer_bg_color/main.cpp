@@ -7,13 +7,14 @@
 
 int main(int argc, char **argv) {
   osgViewer::Viewer viewer;
+  viewer.setUpViewInWindow(400, 400, 640, 480);
+  viewer.getCamera()->setClearColor(osg::Vec4(1, 0, 0, 0));
   osg::Geode *geode = new osg::Geode();
-
   osg::TessellationHints *hints = new osg::TessellationHints;
   hints->setDetailRatio(0.5f);
   geode->addDrawable(new osg::ShapeDrawable(
       new osg::Box(osg::Vec3(2.0f, 0.0f, 0.0f), 2 * 0.5), hints));
-  viewer.setSceneData(geode);
+  viewer.setSceneData(geode);                                                   
+
   return viewer.run();
-  iojwe                                                                         oijdoiwe
 }
