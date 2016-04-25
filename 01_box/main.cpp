@@ -15,5 +15,4 @@ int main(int argc, char **argv) {
       new osg::Box(osg::Vec3(2.0f, 0.0f, 0.0f), 2 * 0.5), hints));
   viewer.setSceneData(geode);
   return viewer.run();
-  iojwe                                                                         oijdoiwe
 }
